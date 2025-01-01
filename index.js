@@ -2,7 +2,7 @@ import express from "express";
 import { products } from "./ProductData.js";
 import cors from "cors"
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 
 
 app.use(cors())
@@ -10,8 +10,8 @@ app.use(cors())
 app.get("/", (req, response) => {
 //   console.log(response.send(`hello world ${req.params.id}`));
 
-  // response.send("hello World");
-  console.log("hello")
+  response.send("hello World");
+//   console.log("hello")
  
 });
 
